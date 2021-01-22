@@ -119,10 +119,15 @@ img {
 
 .header-mail-link{
     display: flex;
+    
 }
 
 .header-tel-link {
     display: flex;
+}
+
+.header-contacts-item {
+   fill: #AFB1B8; 
 }
 
 .header-contacts-item:not(:last-child){
