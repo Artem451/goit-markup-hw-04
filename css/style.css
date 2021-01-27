@@ -54,8 +54,7 @@ img {
 .header {
     background-color: var(--background-color);
     border: 1px solid #ECECEC;
-    padding-top: 24px;
-    padding-bottom: 25px;
+   
 }
 
 .inline-header {
@@ -85,6 +84,12 @@ img {
     flex-direction: row;
     margin: 0;
     padding: 0;
+}
+
+.nav-link {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .nav-menu-item:not(:last-child) {
@@ -118,15 +123,12 @@ img {
 }
 
 .header-mail-link{
-    display: flex;   
+    display: flex;
+    fill: #AFB1B8;   
 }
 
 .header-tel-link {
     display: flex;
-}
-
-.header-contacts-item {
-   fill: #AFB1B8; 
 }
 
 .header-contacts-item:not(:last-child){
@@ -391,7 +393,8 @@ img {
 .soc-list-item:not(:last-child){
     margin-right: 10px;
 }
-.soc-link:hover {
+.soc-link:hover,
+.soc-link:focus {
     background-color: var(--accent-color);
     fill: var(--background-color);
 }
@@ -430,9 +433,10 @@ img {
     fill: #AFB1B8;
 }
 
-.client-item-link:hover {
-    border: 1px solid #2196F3;
-    fill: #2196F3;
+.client-item-link:hover,
+.client-item-link:focus {
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
 }
 
 /*=============== END CLIENT ===============*/
@@ -501,11 +505,13 @@ img {
 
 .footer-inline {
     display: flex;
-    align-items: flex-start;
 }
 
 .join-container {
-    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 92px;
     margin-left: 70px;
 }
 
@@ -629,7 +635,8 @@ img {
     margin-bottom: 0;
 }
 
-.work-examples-item:hover {
+.work-examples-item:hover,
+.work-examples-item:focus {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
                 0px 1px 1px rgba(0, 0, 0, 0.14), 
                 0px 2px 1px rgba(0, 0, 0, 0.2);
